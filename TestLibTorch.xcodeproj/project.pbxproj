@@ -14,12 +14,9 @@
 		A072666D26C234DD008C90CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A072666C26C234DD008C90CE /* Assets.xcassets */; };
 		A072667026C234DD008C90CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A072666E26C234DD008C90CE /* LaunchScreen.storyboard */; };
 		A08D87B026C2404600680DE6 /* model.pt in Resources */ = {isa = PBXBuildFile; fileRef = A08D87AF26C2404600680DE6 /* model.pt */; };
-		FF176895C0351394862D96DB /* libPods-TestLibTorch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37300586E696AE8CCC6D429 /* libPods-TestLibTorch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C65E708378622877AC5174A /* Pods-TestLibTorch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLibTorch.release.xcconfig"; path = "Target Support Files/Pods-TestLibTorch/Pods-TestLibTorch.release.xcconfig"; sourceTree = "<group>"; };
-		4B458660599434759B172FFF /* Pods-TestLibTorch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLibTorch.debug.xcconfig"; path = "Target Support Files/Pods-TestLibTorch/Pods-TestLibTorch.debug.xcconfig"; sourceTree = "<group>"; };
 		A072666026C234DB008C90CE /* TestLibTorch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLibTorch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A072666326C234DB008C90CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A072666526C234DB008C90CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,7 +26,6 @@
 		A072666F26C234DD008C90CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A072667126C234DD008C90CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A08D87AF26C2404600680DE6 /* model.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.pt; sourceTree = "<group>"; };
-		D37300586E696AE8CCC6D429 /* libPods-TestLibTorch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestLibTorch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +33,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF176895C0351394862D96DB /* libPods-TestLibTorch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +42,6 @@
 		2A95BBBD339FC0D8945E21B4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4B458660599434759B172FFF /* Pods-TestLibTorch.debug.xcconfig */,
-				1C65E708378622877AC5174A /* Pods-TestLibTorch.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -59,7 +52,6 @@
 				A072666226C234DB008C90CE /* TestLibTorch */,
 				A072666126C234DB008C90CE /* Products */,
 				2A95BBBD339FC0D8945E21B4 /* Pods */,
-				AC3AEF2A9DD7475D9C029CDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,14 +78,6 @@
 			path = TestLibTorch;
 			sourceTree = "<group>";
 		};
-		AC3AEF2A9DD7475D9C029CDA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D37300586E696AE8CCC6D429 /* libPods-TestLibTorch.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,7 +85,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A072667426C234DD008C90CE /* Build configuration list for PBXNativeTarget "TestLibTorch" */;
 			buildPhases = (
-				B51AD020843B8CCAEED00597 /* [CP] Check Pods Manifest.lock */,
 				A072665C26C234DB008C90CE /* Sources */,
 				A072665D26C234DB008C90CE /* Frameworks */,
 				A072665E26C234DB008C90CE /* Resources */,
@@ -160,31 +143,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B51AD020843B8CCAEED00597 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TestLibTorch-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A072665C26C234DB008C90CE /* Sources */ = {
@@ -337,7 +295,6 @@
 		};
 		A072667526C234DD008C90CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B458660599434759B172FFF /* Pods-TestLibTorch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -357,7 +314,6 @@
 		};
 		A072667626C234DD008C90CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C65E708378622877AC5174A /* Pods-TestLibTorch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
