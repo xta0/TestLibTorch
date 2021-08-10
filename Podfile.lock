@@ -1,0 +1,27 @@
+PODS:
+  - LibTorch (1.9.0):
+    - LibTorch/Core (= 1.9.0)
+  - LibTorch/Core (1.9.0):
+    - LibTorch/Torch
+  - LibTorch/Torch (1.9.0)
+  - TorchWrapper (0.0.2):
+    - LibTorch (~> 1.9.0)
+
+DEPENDENCIES:
+  - TorchWrapper (from `./TorchWrapper/`)
+
+SPEC REPOS:
+  trunk:
+    - LibTorch
+
+EXTERNAL SOURCES:
+  TorchWrapper:
+    :path: "./TorchWrapper/"
+
+SPEC CHECKSUMS:
+  LibTorch: d89f452b8b932002bd98884b3921850a95c35e14
+  TorchWrapper: 1649abfa7b939b921cd1c02764890eb0a1321ff0
+
+PODFILE CHECKSUM: d68c7cbe6e049ff9ecac01b28518512a23305b4c
+
+COCOAPODS: 1.10.0
